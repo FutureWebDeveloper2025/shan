@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="h-screen w-full bg-center bg-cover " style="background-image: url('static/images/home-bg.jpg');">
+        <div class="h-full w-full bg-black bg-opacity-70 ">
+            <div class="h-full w-full max-w-[1300px] px-4 mx-auto pt-12 ">
+                <div class="h-full w-full flex flex-col items-center justify-center space-y-12">
+                    <div class="flex flex-col items-center justify-center space-y-2">
+                        <h1 class="text-5xl text-center font-bold text-yellow-400">Welcome to Modernus</h1>
+                        <h2 class="text-4xl text-center font-semibold text-white">Elevate Your Home with Modern Appliances</h2>
+                        <p class="text-lg text-gray-300 text-center">At Modernus, we believe that a well-equipped home is the key to a comfortable and convenient lifestyle. Welcome to our online store, where innovation meets functionality, and style meets efficiency. Explore a world of modern appliances designed to enhance every corner of your living space.</p>
+                    </div>
+                    <div class="felx items-center space-x-2">
+                        <input type="text" class="w-[700px] text-white bg-white bg-opacity-20 py-2 px-6 rounded-full border border-gray-200 placeholder:text-white " placeholder="Search here..">
+                        <button class="py-2 px-4 rounded-full bg-yellow-400">
+                            <i class='bx bx-search text-xl font-semibold text-white'></i>
+                        </button>
+                    </div>
+                    <p href="" class="text-white">Sign up for personalized site epxerience. 
+                        <a href="{% url 'signup' %}" class="text-blue-500 hover:underline">Sign up here.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
